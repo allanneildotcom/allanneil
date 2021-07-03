@@ -1,1 +1,10 @@
 #+TITLE: Index
+#+DESCRIPTION:  Allan's Home Page
+#+AUTHOR: Allan Neil
+#+EXPORT_FILE_NAME: index.html
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+
+
+* Hello, world!
+This is my personal homepage.  On this site I keep notes on my current projects.
