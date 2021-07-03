@@ -1,0 +1,26 @@
+#+TITLE: My Workflow
+#+DESCRIPTION:  Allan's Home Page
+#+AUTHOR: Allan Neil
+#+EXPORT_FILE_NAME: myworkflow.html
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+#+OPTIONS: num:nil
+
+* Overview
+
+#+BEGIN_SRC plantuml :file myworkflow.png :exports results
+skinparam monochrome true
+left to right direction
+(*) --> "Emacs"
+"Emacs" --> "Projectile"
+"Projectile" --> "Create/Edit Org file"
+"Create/Edit Org file" --> "Export as HTML"
+"Export as HTML" --> "Magit push to Github"
+"Magit push to Github" --> (*)
+#+END_SRC
+
+#+RESULTS:
+[[file:myworkflow.png]]
+
+** Export as HTML
+Org (space m), Export (e), HTML (h), Ouput file and Open browser (o)
+<space> m e h o
