@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-07-03 Sat 16:12 -->
+<!-- 2021-07-03 Sat 20:35 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>My Workflow</title>
+<title>Workflow</title>
 <meta name="author" content="Allan Neil" />
 <meta name="description" content="Allan's Home Page" />
 <meta name="generator" content="Org Mode" />
@@ -194,17 +194,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/bigblow.css"/>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/hideshow.css"/>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-ui-1.10.2.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.localscroll-min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.zclip.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/bigblow.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/hideshow.js"></script>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
@@ -230,44 +225,133 @@
 </head>
 <body>
 <div id="content">
-<h1 class="title">My Workflow</h1>
+<h1 class="title">Workflow</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf397a19">Overview</a>
+<li><a href="#orgaa191b2">Workflow  Overview</a>
 <ul>
-<li><a href="#org4a4fe1b">Export as HTML</a></li>
+<li><a href="#org28f1d9e">Emacs</a></li>
+<li><a href="#org9d5a737">Projectile</a></li>
+<li><a href="#org9af23dd">Create/Edit Org file</a></li>
+<li><a href="#org68a61db">Export as HTML</a></li>
+<li><a href="#org0329246">Magit push to Github</a>
+<ul>
+<li><a href="#orga16ddde">Add New Files to Tracked Files</a></li>
+<li><a href="#orgea9f4a5">Commit Staged Files</a></li>
+<li><a href="#org89aa18c">Push Committed Changes to Github</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
+<p>
+<a href="index.html">Home</a>
+</p>
 
-<div id="outline-container-orgf397a19" class="outline-2">
-<h2 id="orgf397a19">Overview</h2>
-<div class="outline-text-2" id="text-orgf397a19">
+<div id="outline-container-orgaa191b2" class="outline-2">
+<h2 id="orgaa191b2">Workflow  Overview</h2>
+<div class="outline-text-2" id="text-orgaa191b2">
 
-<div id="org6921351" class="figure">
+<div id="org018d677" class="figure">
 <p><img src="myworkflow.png" alt="myworkflow.png" />
 </p>
 </div>
 </div>
 
-<div id="outline-container-org4a4fe1b" class="outline-3">
-<h3 id="org4a4fe1b">Export as HTML</h3>
-<div class="outline-text-3" id="text-org4a4fe1b">
+<div id="outline-container-org28f1d9e" class="outline-3">
+<h3 id="org28f1d9e">Emacs</h3>
+<div class="outline-text-3" id="text-org28f1d9e">
+<p>
+Best to open from dock as a graphical application.  When run from terminal images won&rsquo;t display inline.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9d5a737" class="outline-3">
+<h3 id="org9d5a737">Projectile</h3>
+<div class="outline-text-3" id="text-org9d5a737">
+<p>
+Projectile (space p), browse (.), select existing file or type file name and hit return for new file.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9af23dd" class="outline-3">
+<h3 id="org9af23dd">Create/Edit Org file</h3>
+<div class="outline-text-3" id="text-org9af23dd">
+<p>
+Make sure file extension is .org.
+TODO Figure out how to create and use project templates pre-filled with headings
+</p>
+</div>
+</div>
+
+<div id="outline-container-org68a61db" class="outline-3">
+<h3 id="org68a61db">Export as HTML</h3>
+<div class="outline-text-3" id="text-org68a61db">
 <p>
 Org (space m), Export (e), HTML (h), Ouput file and Open browser (o)
 &lt;space&gt; m e h o
 </p>
 </div>
 </div>
+
+<div id="outline-container-org0329246" class="outline-3">
+<h3 id="org0329246">Magit push to Github</h3>
+<div class="outline-text-3" id="text-org0329246">
+<p>
+Magit (space g), Status (g)
+</p>
+</div>
+
+<div id="outline-container-orga16ddde" class="outline-4">
+<h4 id="orga16ddde">Add New Files to Tracked Files</h4>
+<div class="outline-text-4" id="text-orga16ddde">
+<ul class="org-ul">
+<li>Look at list of Untracked files</li>
+<li>Press s for each file to Stage it (include in project)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgea9f4a5" class="outline-4">
+<h4 id="orgea9f4a5">Commit Staged Files</h4>
+<div class="outline-text-4" id="text-orgea9f4a5">
+<ul class="org-ul">
+<li>Look at Staged Changes list</li>
+<li>Press c c to Commit staged files</li>
+<li>Type comments in the notes</li>
+<li>Press Ctrl-c Ctrl-c to complete commit</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org89aa18c" class="outline-4">
+<h4 id="org89aa18c">Push Committed Changes to Github</h4>
+<div class="outline-text-4" id="text-org89aa18c">
+<ul class="org-ul">
+<li>Still working on repeatable steps for this</li>
+<li>Seems like a pull from main is required to sync with local first</li>
+<li><p>
+Press P for Push then m for matching branch
+</p>
+
+<p>
+TODO Learn more about pushing
+</p></li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Allan Neil</p>
-<p class="date">Created: 2021-07-03 Sat 16:12</p>
+<p class="date">Created: 2021-07-03 Sat 20:35</p>
 </div>
 </body>
 </html>
