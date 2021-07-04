@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #+TITLE: Workflow
 #+DESCRIPTION:  Allan's Home Page
 #+AUTHOR: Allan Neil
@@ -8,6 +9,16 @@
 [[file:index.org][Home]]
 
 * Workflow  Overview
+=======
+#+TITLE: My Workflow
+#+DESCRIPTION:  Allan's Home Page
+#+AUTHOR: Allan Neil
+#+EXPORT_FILE_NAME: myworkflow.html
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+#+OPTIONS: num:nil
+
+* Overview
+>>>>>>> 48c769262a11ad15c254b1d0fc13ae15f2f679a2
 
 #+BEGIN_SRC plantuml :file myworkflow.png :exports results
 skinparam monochrome true
@@ -23,11 +34,27 @@ left to right direction
 #+RESULTS:
 [[file:myworkflow.png]]
 
+<<<<<<< HEAD
 ** Export as HTML
 Org (space m), Export (e), HTML (h), Ouput file and Open browser (o)
 <space> m e h o
 <<<<<<< HEAD
 =======
+=======
+** Emacs
+Best to open from dock as a graphical application.  When run from terminal images won't display inline.
+
+** Projectile
+Projectile (space p), browse (.), select existing file or type file name and hit return for new file.
+
+** Create/Edit Org file
+Make sure file extension is .org.
+TODO Figure out how to create and use project templates pre-filled with headings
+
+** Export as HTML
+Org (space m), Export (e), HTML (h), Ouput file and Open browser (o)
+<space> m e h o
+>>>>>>> 48c769262a11ad15c254b1d0fc13ae15f2f679a2
 
 ** Magit push to Github
 Magit (space g), Status (g)
@@ -43,9 +70,12 @@ Magit (space g), Status (g)
 - Press Ctrl-c Ctrl-c to complete commit
 
 *** Push Committed Changes to Github
+<<<<<<< HEAD
 - Still working on repeatable steps for this
 - Seems like a pull from main is required to sync with local first
 - Press P for Push then m for matching branch
 
   TODO Learn more about pushing
 >>>>>>> 36993bf (formatting stuff)
+=======
+>>>>>>> 48c769262a11ad15c254b1d0fc13ae15f2f679a2
