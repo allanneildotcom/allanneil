@@ -1,7 +1,7 @@
 #+TITLE: Workflow
 #+DESCRIPTION:  Allan's Home Page
 #+AUTHOR: Allan Neil
-#+EXPORT_FILE_NAME: myworkflow.html
+#+EXPORT_FILE_NAME: myWorkflow.html
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: num:nil
 
@@ -12,6 +12,12 @@
 #+BEGIN_SRC plantuml :file myworkflow.png :exports results
 skinparam monochrome true
 left to right direction
+title Editing Workflow
+'caption Editing Workflow
+'header This is a header
+'footer This is a footer
+'legend This is a legend
+
 (*) --> "Emacs"
 "Emacs" --> "Projectile"
 "Projectile" --> "Create/Edit Org file"
@@ -43,23 +49,48 @@ Org (space m), Export (e), HTML (h), Ouput file and Open browser (o)
 
 ** Magit push to Github
 Magit (space g), Status (g)
-*** Create New branch
+
+#+BEGIN_SRC plantuml :file magitsteps.png :exports results
+skinparam monochrome true
+left to right direction
+title Magit Steps
+'caption Editing Workflow
+'header This is a header
+'footer This is a footer
+'legend This is a legend
+
+(*) --> "Track Untracked Files"
+"Track Untracked Files" --> "Stage Changed Files"
+"Stage Changed Files" --> "Commit Changed Files"
+"Commit Changed Files" --> "Create Pull Request"
+"Create Pull Request" --> "Push Commits to Github"
+"Push Commits to Github" --> (*)
+#+END_SRC
+
+#+RESULTS:
+[[file:magitsteps.png]]
+
 
 *** Add New Files to Tracked Files
 - Look at list of Untracked files
 - Press s for each file to Stage it (include in project)
+
+*** Stage new/changed files
+Go to unstaged files list
+Press s beside each file to stage it
 
 *** Commit Staged Files
 - Look at Staged Changes list
 - Press c c to Commit staged files
 - Type comments in the notes
 - Press Ctrl-c Ctrl-c to complete commit
+
 *** Create Pull Requuest
+Create a pull request for Github main
+Press F (Pull) u (remote)
 
 *** Push Committed Changes to Github
-
-- Still working on repeatable steps for this
-- Seems like a pull from main is required to sync with local first
-- Press P for Push then m for matching branch
+Push committed changes to Github
+- Press P (Push) u (remote)
 
   TODO Learn more about pushing
