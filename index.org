@@ -8,5 +8,3 @@
 
 * My Laboratory Notebook
 My apologies if you have stumbled upon these pages while looking for something interesting on the internet.  This is the personal laboratory notebook of Allan Neil.  No, I am not a scientist.  But my life, perhaps like yours, can be viewed as an on-going set of experiments, phenomena, and problems and it helps to take a quasi-scientific approach by keeping detailed notes.  That's what these pages are.   Sorry if you were looking for something more interesting.
-
-[[file:myWorkflow.org][My Workflow]]
